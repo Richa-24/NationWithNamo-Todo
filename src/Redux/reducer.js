@@ -19,7 +19,6 @@ export const reducer = (state = initState, { type, payload }) => {
 
         case SEARCH_HASH:
             state.hashSearch = state.todo.filter((item) => item.title.includes(payload))
-            console.log(state.hashSearch, "search items")
             return {
                 ...state,
             }
