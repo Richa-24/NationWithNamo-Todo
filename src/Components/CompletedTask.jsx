@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux'
 
 export default function CompletedTask() {
     const { completedTodo } = useSelector((state) => state)
-    console.log(completedTodo)
 
     return (
         <>

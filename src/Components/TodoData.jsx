@@ -1,12 +1,11 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Checkbox } from '@material-ui/core'
-import { addTodo, completedTask } from '../Redux/action'
+import { completedTask } from '../Redux/action'
 
 export default function TodoData() {
     const { todo, hashSearch } = useSelector((state) => state)
     const dispatch = useDispatch()
-    console.log(todo)
 
     const handleCheckbox = (e, id, title) => {
         if (e.target.checked === true) {
