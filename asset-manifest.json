@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/NationWithNamo-Todo/static/js/main.63f7fceb.chunk.js",
-    "main.js.map": "/NationWithNamo-Todo/static/js/main.63f7fceb.chunk.js.map",
-    "runtime-main.js": "/NationWithNamo-Todo/static/js/runtime-main.2751887f.js",
-    "runtime-main.js.map": "/NationWithNamo-Todo/static/js/runtime-main.2751887f.js.map",
-    "static/js/2.7ebc0570.chunk.js": "/NationWithNamo-Todo/static/js/2.7ebc0570.chunk.js",
-    "static/js/2.7ebc0570.chunk.js.map": "/NationWithNamo-Todo/static/js/2.7ebc0570.chunk.js.map",
+    "main.js": "/NationWithNamo-Todo/static/js/main.08b1a799.chunk.js",
+    "main.js.map": "/NationWithNamo-Todo/static/js/main.08b1a799.chunk.js.map",
+    "runtime-main.js": "/NationWithNamo-Todo/static/js/runtime-main.19842431.js",
+    "runtime-main.js.map": "/NationWithNamo-Todo/static/js/runtime-main.19842431.js.map",
+    "static/js/2.9d674d84.chunk.js": "/NationWithNamo-Todo/static/js/2.9d674d84.chunk.js",
+    "static/js/2.9d674d84.chunk.js.map": "/NationWithNamo-Todo/static/js/2.9d674d84.chunk.js.map",
     "index.html": "/NationWithNamo-Todo/index.html",
-    "static/js/2.7ebc0570.chunk.js.LICENSE.txt": "/NationWithNamo-Todo/static/js/2.7ebc0570.chunk.js.LICENSE.txt"
+    "static/js/2.9d674d84.chunk.js.LICENSE.txt": "/NationWithNamo-Todo/static/js/2.9d674d84.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2751887f.js",
-    "static/js/2.7ebc0570.chunk.js",
-    "static/js/main.63f7fceb.chunk.js"
+    "static/js/runtime-main.19842431.js",
+    "static/js/2.9d674d84.chunk.js",
+    "static/js/main.08b1a799.chunk.js"
   ]
 }
