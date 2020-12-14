@@ -1,7 +1,7 @@
 {
-  "name": "todo-namo",
+  "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://richa-24.github.io/NationWithNamo-Todo/",
+  "homepage": "https://Richa-24.github.io/NationWithNamo-Todo/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.2",
