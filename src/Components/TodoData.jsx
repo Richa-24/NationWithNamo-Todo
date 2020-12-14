@@ -4,7 +4,7 @@ import { Checkbox } from '@material-ui/core'
 import { addTodo, completedTask } from '../Redux/action'
 
 export default function TodoData() {
-    const { todo } = useSelector((state) => state)
+    const { todo, hashSearch } = useSelector((state) => state)
     const dispatch = useDispatch()
     console.log(todo)
 
@@ -17,15 +17,26 @@ export default function TodoData() {
     return (
         <>
             <h1>Pendings</h1>
-            {todo && todo.map((item) => {
+            {hashSearch ? hashSearch.map((item) => {
                 return (
                     <div key={item.id} style={{ display: 'flex' }}>
                         <div> <Checkbox
                             color="primary" onChange={(e) => handleCheckbox(e, item.id, item.title)} /></div>
-                        <div style={{ marginTop: '10px' }}>{item.title}</div>
+                        <div style={{ marginTop: '6px', fontSize: '25px', textShadow: '2px 2px 4px #000000' }}>{item.title}</div>
                     </div>
                 )
-            })}
+            }) :
+
+                todo && todo.map((item) => {
+                    return (
+                        <div key={item.id} style={{ display: 'flex' }}>
+                            <div> <Checkbox
+                                color="primary" onChange={(e) => handleCheckbox(e, item.id, item.title)} /></div>
+                            <div style={{ marginTop: '6px', fontSize: '25px' }}>{item.title}</div>
+                        </div>
+                    )
+                })
+            }
         </>
     )
 }

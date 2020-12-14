@@ -11,7 +11,7 @@ export default function CompletedTask() {
             {completedTodo && completedTodo.map((item) => {
                 return (
                     <div key={item.id}>
-                        <div style={{ margin: '10px', textAlign: 'center' }}>{item.title}</div>
+                        <div style={{ margin: '10px', fontSize: '25px', textAlign: 'center' }}>{item.title}</div>
                     </div>
                 )
             })}

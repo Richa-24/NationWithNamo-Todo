@@ -20,9 +20,16 @@ export default function MainPage() {
     const [task, setTask] = useState("")
     const dispatch = useDispatch()
 
+    const handleChange = (e) => {
+        setTask(e.target.value)
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault()
-        dispatch(addTodo(task))
+        if (task !== "") {
+            dispatch(addTodo(task))
+        }
+        setTask("")
     }
 
     const handleClear = () => {
@@ -38,7 +45,7 @@ export default function MainPage() {
             </Button>
                 </div>
                 <form onSubmit={(e) => handleSubmit(e)} noValidate autoComplete="off" style={{ textAlign: 'center' }}>
-                    <TextField id="standard-basic" label="Add Todo" onChange={(e) => setTask(e.target.value)} />
+                    <TextField id="standard-basic" label="Add Todo" value={task} onChange={(e) => handleChange(e)} />
                 </form>
                 <div>
                     <div style={{ float: 'left' }}><TodoData /></div>
